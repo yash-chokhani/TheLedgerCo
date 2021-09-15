@@ -25,7 +25,7 @@ public class FileProcessor {
         }
     }
 
-    private void processInputCommands(String command, Map<String, BankLedger> map, List<BankBalance> bankBalanceList) {
+    public void processInputCommands(String command, Map<String, BankLedger> map, List<BankBalance> bankBalanceList) {
         String[] commandParams = command.split(" ");
         BankActions bankActions = BankActions.valueOf(commandParams[0]);
         switch (bankActions) {
